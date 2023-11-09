@@ -1,5 +1,6 @@
 package com.springboot.user_service.config;
 
+/*
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import lombok.SneakyThrows;
@@ -16,7 +17,7 @@ import reactor.netty.http.client.HttpClient;
 @Configuration
 public class WebClientConfig {
 
-    /*
+
     @SneakyThrows
     @Bean
     public WebClient webClient(ClientRegistrationRepository clientRegistrationRepository,
@@ -42,7 +43,19 @@ public class WebClientConfig {
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
                 .build();
     }
-     */
+
+}
+
+*/
+
+import lombok.SneakyThrows;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.reactive.function.client.WebClient;
+
+
+@Configuration
+public class WebClientConfig {
 
     @SneakyThrows
     @Bean
