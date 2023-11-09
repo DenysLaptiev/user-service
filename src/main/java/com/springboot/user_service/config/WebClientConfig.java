@@ -1,6 +1,6 @@
 package com.springboot.user_service.config;
 
-/*
+
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 import lombok.SneakyThrows;
@@ -46,8 +46,8 @@ public class WebClientConfig {
 
 }
 
-*/
 
+/*
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -63,3 +63,5 @@ public class WebClientConfig {
         return WebClient.builder().build();
     }
 }
+
+ */
