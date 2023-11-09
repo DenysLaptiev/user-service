@@ -38,3 +38,7 @@ mvnw.cmd
 user_service_csr.pem
 user_service_privatekey.pem
 user_service_public.crt
+
+keycloak_csr.pem
+keycloak_privatekey.pem
+keycloak_public.crt

@@ -16,6 +16,7 @@ import reactor.netty.http.client.HttpClient;
 @Configuration
 public class WebClientConfig {
 
+    /*
     @SneakyThrows
     @Bean
     public WebClient webClient(ClientRegistrationRepository clientRegistrationRepository,
@@ -40,5 +41,12 @@ public class WebClientConfig {
                 .apply(oauth2.oauth2Configuration())
                 .clientConnector(new ReactorClientHttpConnector(httpClient))
                 .build();
+    }
+     */
+
+    @SneakyThrows
+    @Bean
+    public WebClient webClient() {
+        return WebClient.builder().build();
     }
 }
