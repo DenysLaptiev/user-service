@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.mvn/
+mvnw
+mvnw.cmd
+user_service_csr.pem
+user_service_privatekey.pem
+user_service_public.crt
