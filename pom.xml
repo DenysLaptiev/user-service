@@ -35,18 +35,18 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
-<!--        &lt;!&ndash;AWS core&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-aws</artifactId>-->
-<!--            <version>2.2.1.RELEASE</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;AWS SNS&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-aws-messaging</artifactId>-->
-<!--            <version>2.2.1.RELEASE</version>-->
-<!--        </dependency>-->
+        <!--AWS core-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
+        <!--AWS SNS-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-aws-messaging</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
 
         <!--oauth2-client-->
         <dependency>
