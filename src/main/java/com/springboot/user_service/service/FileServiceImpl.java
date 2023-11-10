@@ -160,8 +160,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Slf4j
 public class FileServiceImpl implements FileService {
 
-//    @Value("${image-service.server.baseurl}")
-//    private String IMAGE_SERVICE_SERVER_BASE_URL;
+    @Value("${image-service.server.baseurl}")
+    private String IMAGE_SERVICE_SERVER_BASE_URL;
 
     private final WebClient webClient;
 
@@ -178,8 +178,8 @@ public class FileServiceImpl implements FileService {
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
         builder.part("file", multipartFile.getResource());
 
-//        String url = IMAGE_SERVICE_SERVER_BASE_URL + "/file-rest/upload";
-        String url = "some-url";
+        String url = IMAGE_SERVICE_SERVER_BASE_URL + "/file-rest/upload";
+//        String url = "some-url";
 
         String result = webClient
                 .post()
