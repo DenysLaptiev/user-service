@@ -51,7 +51,8 @@ public class ImageController {
             fileService.sendToImageService(multipartFile);
             resultMessage = "Your file has been uploaded successfully!";
         } catch (Exception e) {
-            resultMessage = "Error when uploading file! See server logs or contact your admin... ";
+//            resultMessage = "Error when uploading file! See server logs or contact your admin... ";
+            resultMessage = "Error when uploading file! See server logs or contact your admin... "+e.getMessage()+"//////"+e.getStackTrace()+"//////"+e.getCause();
             log.info("--> Error when uploading file: " + e.getMessage());
         }
 
