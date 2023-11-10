@@ -32,9 +32,12 @@ build/
 ### VS Code ###
 .vscode/
 
+### maven ###
 .mvn/
 mvnw
 mvnw.cmd
+
+### SSL certificates ###
 user_service_csr.pem
 user_service_privatekey.pem
 user_service_public.crt
