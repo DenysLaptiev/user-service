@@ -14,8 +14,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-//@RequestMapping("/image-to-user-subscriber")
-@RequestMapping("/image-to-user")
+@RequestMapping("/image-to-user-subscriber")
+//@RequestMapping("/image-to-user")
 @Slf4j
 public class ImageToUserSubscriberController {
 
