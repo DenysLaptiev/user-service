@@ -18,12 +18,6 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         // configure http security
-//        http
-//                .authorizeHttpRequests(authz -> authz
-//                        .requestMatchers(HttpMethod.GET,"/","/home").permitAll()
-//                        .anyRequest().authenticated()) // allow only authenticated requests
-//                .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> {
-//                }));
 
         http
                 .csrf().disable()
