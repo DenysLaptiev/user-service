@@ -26,8 +26,8 @@ public class InitialConfiguration {
     @EventListener(ApplicationReadyEvent.class)
     public void applicationReadyEvent() {
 
-        String url = USER_SERVICE_SERVER_HTTP_BASE_URL + "/image-to-user-subscriber/" ;
-//        String url = USER_SERVICE_SERVER_HTTP_BASE_URL + "/image-to-user/" ;
+        // IMPORTANT: image-to-user is a name of topic!
+        String url = USER_SERVICE_SERVER_HTTP_BASE_URL + "/image-to-user/" ;
         log.info("---> InitialConfiguration: subscribeHTTPToImageToUserTopic: url=" + url);
 
         SubscribeResponse subscribeResponse = snsService.subscribeHTTPToImageToUserTopic(url);
