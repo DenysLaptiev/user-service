@@ -30,8 +30,8 @@ public class SecurityConfig {
                 .authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/home").permitAll()
-//                .antMatchers("/image-topic").permitAll()
-//                .antMatchers("/image-topic/**").permitAll()
+                .antMatchers("/image-to-user").permitAll()
+                .antMatchers("/image-to-user/**").permitAll()
                 .anyRequest().authenticated();
         http.oauth2Login(Customizer.withDefaults()); // incoming requests should contain jwt token
 
