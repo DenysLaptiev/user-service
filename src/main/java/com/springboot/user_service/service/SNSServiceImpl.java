@@ -18,9 +18,6 @@ public class SNSServiceImpl implements SNSService {
     @Value("${cloud.aws.topic.arn}")
     private String topicArn;
 
-    @Value("${cloud.aws.image-to-user.topic.arn}")
-    private String imageToUserTopicArn;
-
     private final AmazonSNSClient amazonSnsClient;
     private final SnsClient snsClient;
     private final StepFunctionService stepFunctionService;
@@ -41,7 +38,7 @@ public class SNSServiceImpl implements SNSService {
                     .protocol(PROTOCOL_NAME_HTTP)
                     .endpoint(url)
                     .returnSubscriptionArn(true)
-                    .topicArn(imageToUserTopicArn)
+                    .topicArn(topicArn)
                     .build();
 
             log.info("---> request=" + request);
