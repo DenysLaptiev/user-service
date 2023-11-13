@@ -1,4 +1,4 @@
-package com.springboot.user_service.config;
+package com.springboot.user_service.config.web;
 
 
 import io.netty.handler.ssl.SslContextBuilder;
@@ -45,23 +45,3 @@ public class WebClientConfig {
     }
 
 }
-
-
-/*
-import lombok.SneakyThrows;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.reactive.function.client.WebClient;
-
-
-@Configuration
-public class WebClientConfig {
-
-    @SneakyThrows
-    @Bean
-    public WebClient webClient() {
-        return WebClient.builder().build();
-    }
-}
-
- */

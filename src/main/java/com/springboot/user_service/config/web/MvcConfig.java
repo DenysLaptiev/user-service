@@ -1,4 +1,4 @@
-package com.springboot.user_service.config;
+package com.springboot.user_service.config.web;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

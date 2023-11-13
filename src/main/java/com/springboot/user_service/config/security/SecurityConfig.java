@@ -1,4 +1,4 @@
-package com.springboot.user_service.config;
+package com.springboot.user_service.config.security;
 
 
 import org.springframework.context.annotation.Bean;
