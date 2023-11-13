@@ -13,8 +13,8 @@ import software.amazon.awssdk.services.sns.model.SubscribeResponse;
 @Slf4j
 public class InitialConfiguration {
 
-    @Value("${image-service.server.baseurl}")
-    private String IMAGE_SERVICE_SERVER_BASE_URL;
+    @Value("${user-service.server.baseurl}")
+    private String USER_SERVICE_SERVER_BASE_URL;
 
     private final SNSService snsService;
 
@@ -26,7 +26,7 @@ public class InitialConfiguration {
     @EventListener(ApplicationReadyEvent.class)
     public void applicationReadyEvent() {
 
-        String url = IMAGE_SERVICE_SERVER_BASE_URL + "/image-to-user-subscriber" ;
+        String url = USER_SERVICE_SERVER_BASE_URL + "/image-to-user-subscriber" ;
         log.info("---> InitialConfiguration: subscribeHTTPToImageToUserTopic: url=" + url);
 
         SubscribeResponse subscribeResponse = snsService.subscribeHTTPToImageToUserTopic(url);
