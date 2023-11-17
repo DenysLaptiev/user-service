@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
 import software.amazon.awssdk.services.sns.model.SubscribeResponse;
 
+
+//TODO: move subscription to SNS of user-service and lambda to image-service
 @Configuration
 @Slf4j
 public class InitialConfiguration {
